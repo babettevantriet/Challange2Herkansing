@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+	
+  font-size: 1.3em;
+  margin: 0 auto;
+  background-color: black;
+  background-image: url("../images/aarde.jpg");
+  background-position:center;
+  background-repeat:no-repeat;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+
+}
+
+.column {
+	
+
+  flex-basis: 100%;
+  width:100%;
+  min-height:200px;
+  background-color:#bbc1cc;
+  
+}
+
+.Logo{
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+
+}
+
+p{
+  display: inline;
+
+}
+
+header {
+  width:100%;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  background: #101010;
+  opacity: 0.9;
+
+}
+
+#intro{
+  width: 80%;
+  background: #101010;
+  opacity: 0.9;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-left: 20px;
+  margin-top: 25px;
+  border-radius: 10px;
+}
+
+
+h1 {
+
+  display:inline;
+  padding-top:10px;
+  padding-bottom:10px;
+
+}
+
+#digitaal{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  color: red;
+  font-size: 10em;
+}
+
+.digitaal{
+  width: 80%;
+  background: #101010;
+  opacity: 0.9;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-left: 20px;
+  margin-top: 25px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+/* Analoge Klok */
+
+.analoog{
+  background: #101010;
+  opacity: 0.9;
+  width: 80%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+#clock{
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 400px;
+}
+
+.circle {
+  fill: #363636;
+  stroke: #292929;
+  stroke-width: 15;
+  stroke-miterlimit: 10;
+
+}
+
+.mid-circle {
+  fill: #e9bd49;
+
+}
+
+.hour-marks {
+  fill: none;
+  stroke: #e9bd49;
+  stroke-width: 5;
+  stroke-miterlimit: 10;
+  
+}
+
+.hour-arm {
+  fill: none;
+  stroke:  #e9bd49;
+  stroke-width: 10;
+  stroke-miterlimit: 10;
+  
+}
+
+.minute-arm {
+  fill: none;
+  stroke:  #e9bd49;
+  stroke-width: 10;
+  stroke-miterlimit: 10;
+
+}
+
+.second-arm {
+  fill: none;
+  stroke: red;
+  stroke-width: 5;
+  stroke-miterlimit: 10;
+
+}
+
+.sizing-box {
+  fill: none;
+
+}
+
+#hour, #minute, #second {
+  transform-origin: 300px 300px;
+
+}
+
+/* Mobiel */
+
+@media screen and (min-width: 360px) and (max-width:719px) {
+	
+  .row { 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+  }
+  
+  .column {
+	  
+    flex: 1;
+	
+  } 
+
+  #digitaal {
+
+    min-height:85px;
+    font-size:4em;
+    display:inline;
+
+  }
+  #datum {
+
+    padding-top:2px;
+    font-size:1em;
+    display:inline;
+
+  }
+
+  #intro{
+
+  font-size:1em;
+  width: 80%;
+  background: #101010;
+  opacity: 0.9;
+  
+  }
+
+  #clock{
+    width: 410px;
+  }
+
+  .logo{
+  width: 500px;
+  }
+
+}
+
+/* Tablet */
+
+@media screen and (min-width: 720px) and (max-width: 1365px){
+	
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+  }
+  
+  .column {  
+    flex: 1;
+    padding:5px;
+    margin:5px;
+    height:auto;
+	
+  }
+
+  #datum {
+    padding-top:2px;
+    font-size:1em;
+    display:inline;
+  }
+
+  #digitaal {
+    min-height:120px;
+    font-size:4em;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  #intro {
+    font-size: 1.5em;
+  }
+
+  #clock{
+    width: 600px;
+  }
+
+
+}
+
+/* Laptop */
+
+@media screen and (min-width: 1366px) and (max-width: 1600px) {
+	
+  .row {
+	  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+  }
+  
+  .column {
+	  
+    flex: 1;
+    height:250px;
+    padding:5px;
+    margin:5px;
+    height:auto;
+	
+  }
+
+  #intro {
+    font-size: 2em;
+  }
+
+  #digitaal {
+    font-size:5em;
+
+  }
+
+  #clock{
+    width: 800px;
+  }
+
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1600px) {
+
+  #intro {
+    font-size:3em;
+
+  }
+
+
+  #digitaal {
+
+    font-size:6em;
+
+  }
+
+  #clock{
+    width: 1000px;
+  }
+
+}
